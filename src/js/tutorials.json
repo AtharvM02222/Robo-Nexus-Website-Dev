@@ -1,0 +1,84 @@
+{
+  "tutorials": [
+    {
+      "id": 1,
+      "title": "Autonomous Line Follower",
+      "category": "robots",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "A smart robot that follows lines using IR sensors with PID control for smooth navigation.",
+      "tech": ["Arduino", "IR Sensors", "Motor Driver"],
+      "status": "Completed",
+      "year": "2024"
+    },
+    {
+      "id": 2,
+      "title": "Smart Home Automation",
+      "category": "iot",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "IoT-based home automation system controllable via mobile app and voice commands.",
+      "tech": ["ESP32", "Firebase", "Flutter"],
+      "status": "Completed",
+      "year": "2024"
+    },
+    {
+      "id": 3,
+      "title": "Gesture Controlled Robot",
+      "category": "robots",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "Robot controlled by hand gestures using accelerometer and wireless communication.",
+      "tech": ["Arduino", "MPU6050", "NRF24L01"],
+      "status": "Completed",
+      "year": "2024"
+    },
+    {
+      "id": 4,
+      "title": "Object Detection Drone",
+      "category": "drones",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "Quadcopter with real-time object detection using computer vision.",
+      "tech": ["Raspberry Pi", "OpenCV", "Python"],
+      "status": "In Progress",
+      "year": "2025"
+    },
+    {
+      "id": 5,
+      "title": "AI Chatbot Assistant",
+      "category": "ai",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "Custom trained chatbot for answering robotics-related queries.",
+      "tech": ["Python", "TensorFlow", "NLP"],
+      "status": "In Progress",
+      "year": "2025"
+    },
+    {
+      "id": 6,
+      "title": "Maze Solver Robot",
+      "category": "robots",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "Autonomous robot that maps and solves mazes using flood-fill algorithm.",
+      "tech": ["Arduino", "Ultrasonic Sensors", "C++"],
+      "status": "Completed",
+      "year": "2024"
+    },
+    {
+      "id": 7,
+      "title": "Weather Station IoT",
+      "category": "iot",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "Real-time weather monitoring system with cloud data logging.",
+      "tech": ["NodeMCU", "DHT22", "ThingSpeak"],
+      "status": "Completed",
+      "year": "2024"
+    },
+    {
+      "id": 8,
+      "title": "Face Recognition System",
+      "category": "ai",
+      "image": "../assets/images/project-placeholder.jpg",
+      "description": "Attendance system using facial recognition with high accuracy.",
+      "tech": ["Python", "OpenCV", "dlib"],
+      "status": "Completed",
+      "year": "2024"
+    }
+  ]
+}

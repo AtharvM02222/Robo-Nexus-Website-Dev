@@ -2147,3 +2147,52 @@ textarea::placeholder {
 .team-card.leaving-soon:hover h2 {
   color: #ffd700;
 }
+
+
+/* ===============================
+   PAGE TITLE (Replaces Glitch)
+================================ */
+.page-title {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #fff 0%, #47a0b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+/* Alumni Button (Replaces Hall of Fame) */
+.alumni-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: linear-gradient(135deg, #47a0b8, #02cadc);
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 25px rgba(71, 160, 184, 0.3);
+}
+
+.alumni-btn i {
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+.alumni-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(71, 160, 184, 0.5);
+}
+
+@media (max-width: 768px) {
+  .page-title { font-size: 2.5rem; }
+}
+
+@media (max-width: 480px) {
+  .page-title { font-size: 2rem; }
+}
