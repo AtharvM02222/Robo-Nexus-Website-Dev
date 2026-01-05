@@ -2169,14 +2169,14 @@ textarea::placeholder {
   gap: 10px;
   margin-top: 30px;
   padding: 15px 35px;
-  background: linear-gradient(135deg, #47a0b8, #02cadc);
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
   color: #000;
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
   border-radius: 50px;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 25px rgba(71, 160, 184, 0.3);
+  box-shadow: 0 5px 25px rgba(255, 215, 0, 0.3);
 }
 
 .alumni-btn i {
@@ -2186,7 +2186,11 @@ textarea::placeholder {
 
 .alumni-btn:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(71, 160, 184, 0.5);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+}
+
+.alumni-btn:hover i {
+  transform: rotate(15deg);
 }
 
 @media (max-width: 768px) {
