@@ -9,5 +9,16 @@
     "status": "Completed / In Progress",
     "year": "Year (2024, 2025, etc.)"
   },
-  "tutorials": []
+  "tutorials": [
+    {
+      "id": 1,
+      "title": "Line Follower Robot",
+      "category": "robots",
+      "image": "../assets/images/Robo_Nexus_Logo.png",
+      "description": "An autonomous robot that follows a black line using IR sensors and PID control.",
+      "tech": ["Arduino", "IR Sensors", "Motor Driver"],
+      "status": "Completed",
+      "year": "2024"
+    }
+  ]
 }
