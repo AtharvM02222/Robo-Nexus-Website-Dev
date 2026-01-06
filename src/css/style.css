@@ -2549,3 +2549,342 @@ input, textarea {
 .event-dot.past {
   background: rgba(255, 255, 255, 0.5);
 }
+
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+
+/* General Mobile Fixes */
+@media (max-width: 768px) {
+  /* Page Hero */
+  .page-hero {
+    min-height: 25vh;
+    padding: 40px 15px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 30px;
+  }
+  
+  .contact-form-div,
+  .contact-info {
+    width: 100%;
+    padding: 25px 20px;
+  }
+  
+  .contact-text {
+    font-size: 1.5rem;
+  }
+  
+  /* Location Section */
+  .location-section {
+    padding: 30px 15px 60px;
+  }
+  
+  .location-card {
+    padding: 25px 15px;
+  }
+  
+  /* Teacher Section */
+  .teacher-section {
+    padding: 40px 15px;
+  }
+  
+  .teacher-card {
+    padding: 30px 25px;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 30px 15px;
+  }
+  
+  .team-container {
+    padding: 1rem;
+    gap: 20px;
+  }
+  
+  .team-card {
+    padding: 25px 20px;
+  }
+  
+  .team-card img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .leaving-badge {
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 0.65rem;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    padding: 30px 15px;
+  }
+  
+  .filter-container {
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .filter-btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Events Section */
+  .events-section {
+    padding: 30px 15px;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .calendar-container {
+    padding: 20px 15px;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+  
+  .about-heading {
+    font-size: 1.8rem;
+  }
+  
+  .about-text-sub {
+    font-size: 1rem;
+  }
+  
+  /* Alumni Section */
+  .alumni-section {
+    padding: 40px 15px 60px;
+  }
+  
+  .alumni-container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  
+  .alumni-card {
+    padding: 25px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .alumni-card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .alumni-btn,
+  .back-to-team-btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  
+  /* Scroll Buttons */
+  .scroll-btn {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+  }
+  
+  .scroll-to-bottom {
+    left: 15px;
+  }
+  
+  .scroll-to-top {
+    right: 15px;
+  }
+  
+  /* Scroll Indicator */
+  .scroll-indicator {
+    margin-top: 25px;
+  }
+  
+  /* Modal */
+  .modal-content {
+    width: 95%;
+    max-height: 85vh;
+  }
+  
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-image {
+    min-height: 200px;
+  }
+  
+  .modal-image img {
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .modal-info {
+    padding: 25px 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px 15px;
+    font-size: 12px;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.6rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .navbar-content {
+    padding: 10px 15px;
+  }
+  
+  .nav-logo img {
+    height: 40px;
+  }
+  
+  .team-card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .team-card h2 {
+    font-size: 1.1rem;
+  }
+  
+  .social-links {
+    gap: 10px;
+  }
+  
+  .social-links a {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .contact-send-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .teacher-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .teacher-icon i {
+    font-size: 1.5rem;
+  }
+  
+  .location-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .location-icon i {
+    font-size: 1.8rem;
+  }
+  
+  .school-name {
+    font-size: 1.1rem;
+  }
+  
+  .alumni-title {
+    font-size: 1.4rem;
+  }
+  
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+  
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-info p {
+    font-size: 0.85rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  .nav-links {
+    padding: 10px 5px;
+  }
+  
+  .social-links a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .filter-btn {
+    min-height: 44px;
+  }
+  
+  .register-btn,
+  .view-project-btn,
+  .contact-send-button {
+    min-height: 48px;
+  }
+  
+  .scroll-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Remove hover effects on touch */
+  .team-card:hover,
+  .project-card:hover,
+  .alumni-card:hover {
+    transform: none;
+  }
+}

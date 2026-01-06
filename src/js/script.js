@@ -220,7 +220,8 @@ if (teamContainer) {
       if (!res.ok) throw new Error('Failed to load team data');
       return res.json();
     })
-    .then(members => {
+    .then(data => {
+      const members = data.members;
       teamContainer.innerHTML = members.map((member, index) => `
         <div class="team-card ${member.leavingSoon ? 'leaving-soon' : ''}">
           ${member.leavingSoon ? '<span class="leaving-badge"><i class="fas fa-crown"></i> Leaving Us Soon</span>' : ''}
@@ -356,7 +357,8 @@ if (alumniContainer) {
       if (!res.ok) throw new Error('Failed to load alumni data');
       return res.json();
     })
-    .then(alumni => {
+    .then(data => {
+      const alumni = data.alumni;
       if (alumni.length === 0) {
         alumniContainer.innerHTML = '<p class="no-alumni">No alumni yet - our journey continues!</p>';
         return;
