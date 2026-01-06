@@ -390,3 +390,55 @@ if (alumniContainer) {
 }
 
 console.log('🤖 Robo Nexus - Website Loaded Successfully!');
+
+/* ===============================
+   SCROLL BUTTONS
+================================ */
+// Create scroll buttons
+const scrollToBottomBtn = document.createElement('button');
+scrollToBottomBtn.className = 'scroll-btn scroll-to-bottom';
+scrollToBottomBtn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+scrollToBottomBtn.setAttribute('aria-label', 'Scroll to bottom');
+
+const scrollToTopBtn = document.createElement('button');
+scrollToTopBtn.className = 'scroll-btn scroll-to-top';
+scrollToTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
+scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
+
+document.body.appendChild(scrollToBottomBtn);
+document.body.appendChild(scrollToTopBtn);
+
+// Scroll button functionality
+scrollToBottomBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Show/hide buttons based on scroll position
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const scrollHeight = document.body.scrollHeight - window.innerHeight;
+  
+  // Show scroll to bottom when near top
+  if (scrollTop < scrollHeight - 100) {
+    scrollToBottomBtn.classList.add('visible');
+  } else {
+    scrollToBottomBtn.classList.remove('visible');
+  }
+  
+  // Show scroll to top when scrolled down
+  if (scrollTop > 100) {
+    scrollToTopBtn.classList.add('visible');
+  } else {
+    scrollToTopBtn.classList.remove('visible');
+  }
+});
