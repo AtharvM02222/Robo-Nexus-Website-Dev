@@ -22,13 +22,19 @@ function generateCalendarDays(year, month) {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const days = [];
 
+  // Combine all events
+  const allEvents = [
+    ...upcomingEvents.map(e => ({ ...e, isPast: false })),
+    ...pastEvents.map(e => ({ ...e, isPast: true }))
+  ];
+
   for (let i = 0; i < firstDay; i++) {
     days.push({ day: '', event: null });
   }
 
   for (let i = 1; i <= daysInMonth; i++) {
     const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
-    const event = upcomingEvents.find(e => e.date === dateStr);
+    const event = allEvents.find(e => e.date === dateStr);
     days.push({ day: i, event });
   }
 
@@ -53,9 +59,9 @@ function renderCalendar() {
   const days = generateCalendarDays(currentYear, currentMonth);
   
   calendarGrid.innerHTML = days.map(d => `
-    <div class="calendar-day ${d.event ? 'has-event' : ''} ${d.day === '' ? 'empty' : ''}">
+    <div class="calendar-day ${d.event ? (d.event.isPast ? 'has-past-event' : 'has-event') : ''} ${d.day === '' ? 'empty' : ''}">
       <span class="day-number">${d.day}</span>
-      ${d.event ? `<span class="event-dot" title="${d.event.title}"></span>` : ''}
+      ${d.event ? `<span class="event-dot ${d.event.isPast ? 'past' : ''}" title="${d.event.title}"></span>` : ''}
     </div>
   `).join('');
 }

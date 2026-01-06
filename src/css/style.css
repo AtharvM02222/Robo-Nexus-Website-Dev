@@ -2428,3 +2428,124 @@ input, textarea {
     right: 20px;
   }
 }
+
+
+/* ===============================
+   TEACHER SECTION
+================================ */
+.teacher-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.teacher-section .section-title {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.teacher-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.teacher-card {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(30, 30, 30, 0.9));
+  border: 1px solid rgba(71, 160, 184, 0.3);
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-width: 250px;
+}
+
+.teacher-card:hover {
+  transform: translateY(-10px);
+  border-color: #47a0b8;
+  box-shadow: 0 20px 40px rgba(71, 160, 184, 0.2);
+}
+
+.teacher-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #47a0b8, #02cadc);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.teacher-icon i {
+  font-size: 2rem;
+  color: #000;
+}
+
+.teacher-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.teacher-card p {
+  color: #47a0b8;
+  font-size: 0.95rem;
+}
+
+/* Location Button */
+.location-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: transparent;
+  border: 2px solid #47a0b8;
+  color: #47a0b8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.location-btn i {
+  color: #47a0b8;
+}
+
+.location-btn:hover {
+  background: #47a0b8;
+  color: #000;
+}
+
+.location-btn:hover i {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .teacher-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .teacher-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+/* ===============================
+   CALENDAR PAST EVENTS
+================================ */
+.calendar-day.has-past-event {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.event-dot.past {
+  background: rgba(255, 255, 255, 0.5);
+}

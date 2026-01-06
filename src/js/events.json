@@ -2,62 +2,24 @@
   "upcomingEvents": [
     {
       "id": 1,
-      "title": "Robotics Workshop 2025",
-      "date": "2025-02-15",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "School Auditorium",
-      "description": "Hands-on workshop covering Arduino basics, sensor integration, and building your first robot.",
+      "title": "Event Title",
+      "date": "YYYY-MM-DD",
+      "time": "00:00 AM - 00:00 PM",
+      "location": "Location",
+      "description": "Event description here.",
       "type": "workshop",
       "registrationOpen": true,
       "spots": 30,
-      "spotsLeft": 12
-    },
-    {
-      "id": 2,
-      "title": "Inter-School Robo Wars",
-      "date": "2025-03-20",
-      "time": "9:00 AM - 6:00 PM",
-      "location": "Sports Complex",
-      "description": "Battle robots competition! Build your combat robot and compete against other schools.",
-      "type": "competition",
-      "registrationOpen": true,
-      "spots": 20,
-      "spotsLeft": 8
-    },
-    {
-      "id": 3,
-      "title": "AI & ML Bootcamp",
-      "date": "2025-04-10",
-      "time": "11:00 AM - 3:00 PM",
-      "location": "Computer Lab",
-      "description": "Introduction to artificial intelligence and machine learning with Python.",
-      "type": "bootcamp",
-      "registrationOpen": false,
-      "spots": 25,
-      "spotsLeft": 25
+      "spotsLeft": 30
     }
   ],
   "pastEvents": [
     {
-      "title": "Club Inauguration",
-      "date": "2024-08-15",
-      "description": "Official launch of Robo Nexus with 30+ founding members.",
-      "images": ["../assets/images/Robo_Nexus_Logo.png"],
-      "highlights": ["30+ members joined", "First project announced", "Team formation"]
-    },
-    {
-      "title": "Arduino Basics Workshop",
-      "date": "2024-09-20",
-      "description": "Introductory workshop on Arduino programming and electronics.",
-      "images": ["../assets/images/Robo_Nexus_Logo.png"],
-      "highlights": ["20 participants", "Built LED projects", "Sensor demos"]
-    },
-    {
-      "title": "Hackathon 2024",
-      "date": "2024-11-15",
-      "description": "24-hour hackathon focused on IoT solutions for smart campus.",
-      "images": ["../assets/images/Robo_Nexus_Logo.png"],
-      "highlights": ["5 teams competed", "Smart attendance winner", "IoT innovations"]
+      "title": "Event Title",
+      "date": "YYYY-MM-DD",
+      "description": "Event description here.",
+      "images": ["../assets/images/image.png"],
+      "highlights": ["Highlight 1", "Highlight 2", "Highlight 3"]
     }
   ]
 }
