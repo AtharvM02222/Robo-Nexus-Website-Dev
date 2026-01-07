@@ -86,12 +86,11 @@ body {
 }
 
 .nav-logo img:hover {
-  transform: rotate(360deg) scale(1.1);
   filter: drop-shadow(0 0 20px rgba(71, 160, 184, 0.8));
 }
 
 .logo-spin {
-  animation: float 3s ease-in-out infinite;
+  /* Animation removed */
 }
 
 @keyframes float {
@@ -2305,6 +2304,11 @@ textarea::placeholder {
 .navbar {
   min-height: 70px;
   height: 70px;
+  padding: 0 60px;
+}
+
+.navbar-content {
+  height: 100%;
 }
 
 
@@ -2348,7 +2352,11 @@ img {
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
-  pointer-events: none;
+}
+
+/* Allow clicking on logo */
+.nav-logo img {
+  pointer-events: auto;
 }
 
 body {
